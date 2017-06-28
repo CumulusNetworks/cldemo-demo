@@ -1,0 +1,86 @@
+# networking
+interfaces:
+    leaf01:
+        loopback: "10.0.0.11"
+        asn: 65011
+        neighbors:
+            swp1:
+            swp2:
+        fabric:
+            swp51:
+            swp52:
+    leaf02:
+        loopback: "10.0.0.12"
+        asn: 65012
+        neighbors:
+            swp1:
+            swp2:
+        fabric:
+            swp51:
+            swp52:
+    leaf03:
+        loopback: "10.0.0.13"
+        asn: 65013
+        neighbors:
+            swp1:
+            swp2:
+        fabric:
+            swp51:
+            swp52:
+    leaf04:
+        loopback: "10.0.0.14"
+        asn: 65014
+        neighbors:
+            swp1:
+            swp2:
+        fabric:
+            swp51:
+            swp52:
+    spine01:
+        loopback: "10.0.0.21"
+        asn: 65020
+        fabric:
+            swp1:
+            swp2:
+            swp3:
+            swp4:
+    spine02:
+        loopback: "10.0.0.22"
+        asn: 65020
+        fabric:
+            swp1:
+            swp2:
+            swp3:
+            swp4:
+    server01:
+        loopback:
+            ip: "10.0.0.31"
+            mask: "255.255.255.255"
+        asn: 65101
+        neighbors:
+            eth1:
+            eth2:
+    server02:
+        loopback:
+            ip: "10.0.0.32"
+            mask: "255.255.255.255"
+        asn: 65102
+        neighbors:
+            eth1:
+            eth2:
+    server03:
+        loopback:
+            ip: "10.0.0.33"
+            mask: "255.255.255.255"
+        asn: 65103
+        neighbors:
+            eth1:
+            eth2:
+    server04:
+        loopback:
+            ip: "10.0.0.34"
+            mask: "255.255.255.255"
+        asn: 65104
+        neighbors:
+            eth1:
+            eth2:
