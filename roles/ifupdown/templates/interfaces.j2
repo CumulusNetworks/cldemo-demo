@@ -6,8 +6,8 @@
 auto lo
 iface lo inet loopback
 
-auto lo
-iface lo inet static
+auto lo:0
+iface lo:0 inet static
     address {{ intvars['loopback'].ip }}
     netmask {{ intvars['loopback'].mask }}
 
