@@ -54,6 +54,8 @@ autoconfig oob-mgmt-server
  connect server03 eth2 leaf04 swp1
  connect server04 eth1 leaf03 swp2
  connect server04 eth2 leaf04 swp2
+ connect leaf01 swp44 oob-mgmt-server eth2
+ connect leaf02 swp44 oob-mgmt-server eth3
  connect leaf01 swp45 leaf01 swp46
  connect leaf01 swp47 leaf01 swp48
  connect leaf02 swp45 leaf02 swp46
